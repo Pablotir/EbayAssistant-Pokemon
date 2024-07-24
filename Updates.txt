@@ -1,0 +1,53 @@
+Log 5/31
+For version 1.5:
+Gave up on using SerpAPI for now since I can't find a suitable way of refining results and 
+managing to get specific results for each card. In the meantime, I created the giant filter that 
+I have right now and will be used moving forward. No clue how my own refine function works since 
+half the time a capitalized version will work and half the time a random variation of said word
+will work. TBD how that works one day. 
+
+1.6+ goal:
+Make sure I can actually pull results from pricecharting using previous methods and also be able
+to make a dictionary.txt for the filter and find a way to create a delay key to monetize.
+
+Log 6/4
+For version 1.6: 
+I managed to finally update to v3 and also managed to ensure that a notification with the price
+from pricecharting to load in said notification.
+
+1.7 goal:
+Ensure that we can just stay on the same tab without switching and replace the text on ebay to 
+show current price and avg price, maybe show discount of it later.
+Also ensure that the stupid notification only happens 1x after clicking it.
+
+Log 6/5-6/8
+(Rest of logs in old copies since major changes in code were used)
+Finished adding a way to have 2 tabs open the pricecharting links independently without the prices
+synching. Solution was to have it generate seperate IDs.
+Notifications are now gone and substituted with an inline price, color pending for injection
+I also did add a seperate button for auctions since that had an issue where it turns out the clock
+for the auction affects the price you see live. Thus, everything was moved to the BIN or bid button.
+
+1.8 goal + Monetization plan:
+I want to make sure it works upon loading the listing.
+Should automatically scan and find which grade is the card and automatically adjust using switch
+case table
+
+Long term plan:
+Refine searches even more with manual checks
+Eventually solve the arceus issue
+
+Monetization idea:
+Just take donations and make it Free
+Add a section thats paywalled in which it will search on ebay for the lowest price
+
+Log 6/10
+The extension now works immediately when a listing link is opened rather than
+waiting for me to open it.
+
+Log 6/11
+I can now grab all the details about the card and then add them at the end if they are of a specialty such as first edition or 
+a specific set name, this helps accurately grab the card more often. I should be adding more specialty card suffixes now or in the
+near future. 
+Issue rn is that it won't clean up the title for this ebay link:https://www.ebay.com/itm/204821475356?itmmeta=01J052YVSWXARTGHMXYR75ABJF&hash=item2fb04fb01c%3Ag%3AUzMAAOSwq3ZmO2A9&itmprp=enc%3AAQAJAAAAwJdfn4OfZDEz1CWV0KLLaDN20M54S5JnGV%2F6%2FpOd2yPxhXUIpd4Qwj9q2GRvdj26VPmvGGVamebBM93kq5IG7IT4764yYjDzIHvfcIIdz1JBza2Va5SPgHPkTRfDfSz6Pr%2Baw44x%2FfNgGjmAhjlorG0rGXbFSDIexpYQdWX7U07ty3KwvwMiwm6U4ILax8xVxxxTNVTo9%2BnjfQjkoqZtZmc70fa2nQXYEwn2iLVRp%2B50WUjyl%2B25tabt1hGPxc83Yw%3D%3D%7Ctkp%3ABk9SR4q9-6KBZA&LH_BIN=1
+
