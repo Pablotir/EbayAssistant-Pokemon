@@ -28,7 +28,7 @@ Notifications are now gone and substituted with an inline price, color pending f
 I also did add a seperate button for auctions since that had an issue where it turns out the clock
 for the auction affects the price you see live. Thus, everything was moved to the BIN or bid button.
 
-1.8 goal
+1.8 goal + Monetization plan:
 I want to make sure it works upon loading the listing.
 Should automatically scan and find which grade is the card and automatically adjust using switch
 case table
@@ -37,6 +37,9 @@ Long term plan:
 Refine searches even more with manual checks
 Eventually solve the arceus issue
 
+Monetization idea:
+Just take donations and make it Free
+Add a section thats paywalled in which it will search on ebay for the lowest price
 
 Log 6/10
 The extension now works immediately when a listing link is opened rather than
@@ -48,3 +51,9 @@ a specific set name, this helps accurately grab the card more often. I should be
 near future. 
 Issue rn is that it won't clean up the title for this ebay link:https://www.ebay.com/itm/204821475356?itmmeta=01J052YVSWXARTGHMXYR75ABJF&hash=item2fb04fb01c%3Ag%3AUzMAAOSwq3ZmO2A9&itmprp=enc%3AAQAJAAAAwJdfn4OfZDEz1CWV0KLLaDN20M54S5JnGV%2F6%2FpOd2yPxhXUIpd4Qwj9q2GRvdj26VPmvGGVamebBM93kq5IG7IT4764yYjDzIHvfcIIdz1JBza2Va5SPgHPkTRfDfSz6Pr%2Baw44x%2FfNgGjmAhjlorG0rGXbFSDIexpYQdWX7U07ty3KwvwMiwm6U4ILax8xVxxxTNVTo9%2BnjfQjkoqZtZmc70fa2nQXYEwn2iLVRp%2B50WUjyl%2B25tabt1hGPxc83Yw%3D%3D%7Ctkp%3ABk9SR4q9-6KBZA&LH_BIN=1
 
+Log 9/18
+Now on Version 1.9
+I did some updates on filters and disabled the clickable icon because its no longer in use.
+
+Log 11/6
+Improved filter by a large margin, also added a database of all current Pokemon - TBD whether or not used since I haven't added directly in code

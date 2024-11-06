@@ -42,15 +42,6 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             }
         });
     } else if (request.action === 'PSA9Price') {
-        const psa9price = request.price;
-        const notificationOptions = {
-            type: 'basic',
-            iconUrl: 'icon.png',
-            title: 'PSA 9 Price',
-            message: 'PSA 9 price is: ' + psa9price,
-        };
-        //chrome.notifications.create(null, notificationOptions);
-
         // Send a message to each eBay tab that made the request
         for (let tabId in ebayTabs) {
             chrome.tabs.sendMessage(parseInt(tabId), { action: 'updateEbayPrice', price: psa9price });
